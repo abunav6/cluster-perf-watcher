@@ -16,12 +16,13 @@ Furthermore, the count sequence is maintained quite simply in a SQL database and
 
 We can also get a flame graph by running the command ```py-spy --flame profile.svg -- python3 watcher.py```. These yields a flame graph as below. An SVG File is a scalable vector graph, something like a screenshot of a system process. This collects 200 samples in the program, and each process/subprocess is graphed. 
 
-[Flame Graph](https://github.com/abunav6/Cray-Stuff/blob/master/profile.svg)
- (The ```.svg``` file can be opened in a web browser and then we can actually visualize,in detail, all the processes that are going on. ```.svg``` is actually ```XML``` encoded, so that enables this 'screenshot' to work something like a website)
+
+The ```.svg``` file can be opened in a web browser and then we can actually visualize,in detail, all the processes that are going on. ```.svg``` is actually ```XML``` encoded, so that enables this 'screenshot' to work something like a website
  
  Other files:
  
      1. `ssh_conf.py`- contains the SSH connect function
      2. `sql_conf.py`- contains the SQL operations
-     3. `conf.py`- contains the SQL database details
-     4. `user.py` - contains the SSH connect details
+     (The above two files aren't included in the repo)
+     3. `ssh_exec.py`- contains the SSH functions to be executed in the main.py file
+     4. `sql_exec.py` - contains the SQL functions to be executed in the main.py file
