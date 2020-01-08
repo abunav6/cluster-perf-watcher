@@ -14,7 +14,7 @@ All the times mentioned above configurable, in the form of varibles.
 
 Furthermore, the count sequence is maintained quite simply in a SQL database and is incremented every time the ```top``` command is called so as to correctly maintain the average data.
 
-We can also get a flame graph by running the command ```py-spy --flame profile.svg -- python3 watcher.py```. These yields a flame graph as below. An SVG File is a scalable vector graph, something like a screenshot of a system process. This collects 200 samples in the program, and each process/subprocess is graphed. 
+We can also get a flame graph by running the command ```py-spy --flame profile.svg -- python3 watcher.py```. This yields a flame graph as below. An SVG File is a scalable vector graph, something like a screenshot of a system process. This collects 200 samples in the program, and each process/subprocess is graphed. 
 
 
 The ```.svg``` file can be opened in a web browser and then we can actually visualize,in detail, all the processes that are going on. ```.svg``` is actually ```XML``` encoded, so that enables this 'screenshot' to work something like a website
